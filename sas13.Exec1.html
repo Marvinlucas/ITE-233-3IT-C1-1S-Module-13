@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 title = "wow" onclick="this.innerHTML='Ooopsssss!'">Click on this text!</h1>
+</br>
+<bold style = "color:blue" onclick = "this.innerHTML = 'hello world'">click this </bold>
+</body>
+</html>
+So, what is the meaning of this, that is the property that pointing to itself within the elements to display the content. (file->sas13.Exec1.html)
+In this example, a function is called from the event handler:
+<!DOCTYPE html>
+<html>
+<body>
+<h1 onclick="changeText(this)">Click on this text!</h1>
+<script>
+function changeText(id) {
+id.innerHTML = "Ooops!";
+}
+</script>
+</body>
+</html>
